@@ -11,10 +11,10 @@ from models.user import User
 from models import storage
 
 
-class HBNBCommand(cmd.Cmd):
-    """The console class of our HBNB project."""
-    intro = 'Welcome to the HBNB project shell.'
-    prompt = '(hbnb)'
+class AirBNBCommand(cmd.Cmd):
+    """The console class of our AirBNB project."""
+    intro = 'Welcome to the Air BNB project shell.'
+    prompt = '(airbnb)'
 
     classes = [
             'BaseModel',
@@ -50,7 +50,7 @@ class HBNBCommand(cmd.Cmd):
         Ex: $ create BaseModel
         """
         if not line:
-            print("** class name is missing **")
+            print("** class user's name is missing **")
             return None
         else:
             line = eval(line + '()')
